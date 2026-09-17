@@ -1,0 +1,157 @@
+.student-list-container {
+  padding: 1.5rem 2rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-toggle {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-toggle button {
+  padding: 0.5rem 1.25rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+}
+
+.view-toggle button.active,
+.view-toggle button:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.student-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.student-card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.student-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.student-name {
+  color: var(--color-text);
+  margin: 1rem 0 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.student-phone {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.action-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.action-buttons button {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  padding: 0.4rem 0.85rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+
+.action-buttons button:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.student-list.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.student-list.table th,
+.student-list.table td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+.student-list.table th {
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+}
+
+.student-list.table tr:last-child td {
+  border-bottom: none;
+}
+
+.student-list.table tr:hover td {
+  background: var(--color-bg);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: var(--color-danger);
+}
