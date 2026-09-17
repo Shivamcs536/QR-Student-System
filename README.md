@@ -91,6 +91,28 @@ Then open **http://localhost:3000**.
    number to link their account, then log in to see their own record — or
    simply scan their QR code to view it without logging in.
 
+## Working Images
+
+
+<img width="1908" height="893" alt="Screenshot 2026-09-17 100022" src="https://github.com/user-attachments/assets/eb0676d0-50d3-40b7-a15b-a613601f15a7" />
+
+
+
+<img width="1896" height="903" alt="Screenshot 2026-09-17 100039" src="https://github.com/user-attachments/assets/38998455-1ecd-4c9e-bfa6-4a163a3d96cd" />
+
+
+
+<img width="1891" height="903" alt="Screenshot 2026-09-17 100118" src="https://github.com/user-attachments/assets/76eee5d0-fe88-47fc-91ca-7de4ee68dbd4" />
+
+
+
+<img width="1823" height="903" alt="Screenshot 2026-09-17 100148" src="https://github.com/user-attachments/assets/9c891db7-c2c1-4f90-ad25-b13bf3b51f81" />
+
+
+
+<img width="1872" height="896" alt="Screenshot 2026-09-17 100205" src="https://github.com/user-attachments/assets/764cab90-f7a0-4be5-ad49-9cd2cc0d0faa" />
+
+
 ## Environment Variables
 See `.env.example` for all required variables:
 - `SERVER_PORT` — backend port (default 5000)
@@ -106,5 +128,3 @@ served statically at `/uploads/assignments/<filename>`. This folder is
 excluded from git (only a `.gitkeep` placeholder is committed) since uploaded
 files shouldn't live in source control.
 
-## License
-MIT
